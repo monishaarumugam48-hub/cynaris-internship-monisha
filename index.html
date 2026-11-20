@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport"
-           content="width=device-widht,
-initial-scale=1.0">
-   <meta name="description" 
-         content="A beginner-friendly website demonstrating HTML5 semantic structure and accessibility.">
-    <title>HTML5 Structure and Semantic</title>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="A beginner-friendly website demonstrating HTML5 semantic structure and accessibility.">
+
+    <title>HTML5 Structure and Semantic</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>My HTML5 Learning Website</h1>
 
-        <p>Learning HTML5 Structure and semantics</p>
+    <header class="site-header">
+        <h1>My HTML5 Learning Website</h1>
+        <p>Learning HTML5 Structure and Semantics</p>
     </header>
 
-<nav aria-label="Main navigation">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav class="navbar" aria-label="Main navigation">
+        <h2>My Website</h2>
 
-<main id="home">
-    
-   <article>
-      <h2>Welcome to HTml5</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-      <p>HTML5 is used to create the structure of modern websites.</p>
+    <main id="home" class="container">
 
-      <section id="about"
-               aria-labelledby="about-heading">
-            <h2 id="about-heading">About HTML5</h2>   
+        <article>
+            <h2>Welcome to HTML5</h2>
 
-            <p>HTML5 provides semantic elements that make websites easier to understand.</p>
+            <p>
+                HTML5 is used to create the structure of modern websites.
+            </p>
+        </article>
 
-      </section>
-   </article>
-  
-     <aside aria-labelledby="related-heading">
-        <h2 id="related-heading">Related Information</h2>
-        <p>HTML5 improves website structure,accessibility and SEO.</p>
-     </aside>
-</main>
-<section id="contact" aria-labelledby="contact-heading">
-    <h2 id="contact-heading">Contact Us</h2>
-    <p>Email: cynaris@gmail.com</p>
-</section>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About HTML5</h2>
 
-<footer>
-    <p>&copy; 2026 my HTML5 website</p>
-</footer>
+            <p>
+                HTML5 provides semantic elements that make websites easier to understand.
+            </p>
+        </section>
+
+        <aside aria-labelledby="related-heading">
+            <h2 id="related-heading">Related Information</h2>
+
+            <p>
+                HTML5 improves website structure, accessibility and SEO.
+            </p>
+        </aside>
+
+        <section id="articles" aria-labelledby="articles-heading">
+
+            <header class="page-header">
+                <p class="subtitle">LATEST ARTICLES</p>
+                <h2 id="articles-heading">The Auto-Fit Archive</h2>
+            </header>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <div class="card-image engineering">
+                        <span class="category">Engineering</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Designing Resilient Grid Systems for the Modern Web</h2>
+
+                        <p>
+                            How auto-fit and minmax remove the need for
+                            breakpoint-driven column math.
+                        </p>
+
+                        <div class="author">
+                            Maya Chen <span>•</span> 6 min read
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image design">
+                        <span class="category">Design</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Typography Scales That Don't Break on Mobile</h2>
+
+                        <p>
+                            A practical look at clamp(), fluid type,
+                            and readable line lengths.
+                        </p>
+
+                        <div class="author">
+                            Sam Osei <span>•</span> 4 min read
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image product">
+                        <span class="category">Product</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Shipping Faster With Component-Driven Layouts</h2>
+
+                        <p>
+                            Lessons from rebuilding a design system
+                            around composable grid primitives.
+                        </p>
+
+                        <div class="author">
+                            Priya Nair <span>•</span> 8 min read
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>Email: cynaris@gmail.com</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My HTML5 Website</p>
+    </footer>
 
 </body>
 </html>
+

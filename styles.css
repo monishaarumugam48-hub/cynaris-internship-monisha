@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.site-header {
+    text-align: center;
+    padding: 30px;
+    background-color: #e0f2fe;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222222;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+main {
+    padding: 30px;
+}
+
+article,
+section,
+aside {
+    margin-bottom: 25px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    color: #666666;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: #dbeafe;
+}
+
+.card-image {
+    min-height: 150px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.engineering {
+    background-color: #cbd5e1;
+}
+
+.design {
+    background-color: #fbcfe8;
+}
+
+.product {
+    background-color: #bfdbfe;
+}
+
+.category {
+    background-color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+.author {
+    font-size: 14px;
+    color: #666666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
