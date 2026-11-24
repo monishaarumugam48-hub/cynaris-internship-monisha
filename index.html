@@ -8,12 +8,11 @@
     <meta name="description"
         content="A beginner-friendly responsive website demonstrating HTML5 semantics and accessibility.">
 
-    <title>HTML5 Structure and Responsive Design</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <header class="site-header">
         <h1>My HTML5 Learning Website</h1>
         <p>Learning HTML5 Structure and Semantics</p>
@@ -36,58 +35,46 @@
     </nav>
 
     <main id="home" class="container">
+
         <article>
             <h2>Welcome to HTML5</h2>
-
             <p>
                 HTML5 is used to create the structure
                 of modern websites.
             </p>
         </article>
-        <section id="about" aria-labelledby="about-heading">
 
-            <h2 id="about-heading">About HTML5</h2>
-
+        <section id="about">
+            <h2>About HTML5</h2>
             <p>
                 HTML5 provides semantic elements that make
                 websites easier to understand.
             </p>
-
         </section>
 
-        <aside aria-labelledby="related-heading">
-
-            <h2 id="related-heading">Related Information</h2>
-
+        <aside>
+            <h2>Related Information</h2>
             <p>
                 HTML5 improves website structure,
                 accessibility and SEO.
             </p>
-
         </aside>
 
-        <section id="articles" aria-labelledby="articles-heading">
+        <section id="articles">
 
             <header class="page-header">
-
                 <p class="subtitle">LATEST ARTICLES</p>
-
-                <h2 id="articles-heading">
-                    The Auto-Fit Archive
-                </h2>
-
+                <h2>The Auto-Fit Archive</h2>
             </header>
 
             <div class="card-container">
 
                 <article class="card">
-
                     <div class="card-image engineering">
                         <span class="category">Engineering</span>
                     </div>
 
                     <div class="card-content">
-
                         <h2>
                             Designing Resilient Grid Systems
                             for the Modern Web
@@ -100,21 +87,17 @@
                         </p>
 
                         <div class="author">
-                            Maya Chen <span>•</span> 6 min read
+                            Maya Chen • 6 min read
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="card">
-
                     <div class="card-image design">
                         <span class="category">Design</span>
                     </div>
 
                     <div class="card-content">
-
                         <h2>
                             Typography Scales That Don't
                             Break on Mobile
@@ -126,21 +109,17 @@
                         </p>
 
                         <div class="author">
-                            Sam Osei <span>•</span> 4 min read
+                            Sam Osei • 4 min read
                         </div>
-
                     </div>
-
                 </article>
 
                 <article class="card">
-
                     <div class="card-image product">
                         <span class="category">Product</span>
                     </div>
 
                     <div class="card-content">
-
                         <h2>
                             Shipping Faster With
                             Component-Driven Layouts
@@ -152,15 +131,12 @@
                         </p>
 
                         <div class="author">
-                            Priya Nair <span>•</span> 8 min read
+                            Priya Nair • 8 min read
                         </div>
-
                     </div>
-
                 </article>
 
             </div>
-
         </section>
 
         <section id="javascript">
@@ -174,33 +150,32 @@
                 modern ES6+ features.
             </p>
 
+            <button id="greetingButton" class="greeting-button">
+                Click Me
+            </button>
+
+            <p id="greetingMessage" aria-live="polite"></p>
+
         </section>
 
         <section id="services">
-
             <h2>Our Services</h2>
-
             <p>
                 We create modern, accessible and
                 responsive web layouts.
             </p>
-
         </section>
 
         <section id="contact">
-
             <h2>Contact Us</h2>
-
             <p>Email: cynaris@gmail.com</p>
-
         </section>
 
     </main>
-
+    
     <footer>
         <p>&copy; 2026 My HTML5 Website</p>
     </footer>
-
 
     <script src="script.js"></script>
 
