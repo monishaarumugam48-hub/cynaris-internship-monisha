@@ -20,3 +20,8 @@ This repository contains my internship tasks and daily activities.
 
 ## Author
 Monisha
+- Responsive Design and Media Queries
+- Git and GitHub workflow
+
+## Author
+Monisha
