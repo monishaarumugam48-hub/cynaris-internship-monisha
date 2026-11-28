@@ -4,194 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A mobile-first responsive landing page built with CSS Grid, Flexbox and media queries.">
+    <title>Cynaris Responsive Landing Page</title>
 
-    <meta name="description"
-        content="A beginner-friendly responsive website demonstrating HTML5 semantics and accessibility.">
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="advanced_styles.css">
-
-    <title>My HTML5 Learning Website</title>
 </head>
 
 <body>
 
+    <!-- NAVIGATION (Flexbox) -->
     <header class="site-header">
-        <h1>My HTML5 Learning Website</h1>
-        <p>Learning HTML5 Structure and Semantics</p>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">My Website</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeBtn" type="button">Change Theme</button>
+        </nav>
     </header>
 
-    <nav class="navbar" aria-label="Main navigation">
+    <main>
 
-        <h2>My Website</h2>
+        <!-- SECTION 1: HERO -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1>Build Responsive Websites That Work Everywhere</h1>
+                <p class="hero-text">
+                    A mobile-first landing page using CSS Grid, Flexbox
+                    and media queries.
+                </p>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#javascript">JavaScript</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+                <div class="hero-actions">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <button id="greetingButton" class="btn btn-secondary" type="button">Click Me</button>
+                </div>
 
-    </nav>
- 
-    <button id ="themeBtn">Change Theme</button>
-    <h2>Welcome to my Website</h2>
-    <p>This is my CSS Advanced Project</p>
-
-    <div class="spinner">
-        <div class="progress-bar"></div>
-    </div> 
-
-    <h2 class="heading">css Advanced</h2>
-
-    <main id="home" class="container">
-
-        <article>
-            <h2>Welcome to HTML5</h2>
-            <p>
-                HTML5 is used to create the structure
-                of modern websites.
-            </p>
-        </article>
-
-        <section id="about">
-            <h2>About HTML5</h2>
-            <p>
-                HTML5 provides semantic elements that make
-                websites easier to understand.
-            </p>
-        </section>
-
-        <aside>
-            <h2>Related Information</h2>
-            <p>
-                HTML5 improves website structure,
-                accessibility and SEO.
-            </p>
-        </aside>
-
-        <section id="articles">
-
-            <header class="page-header">
-                <p class="subtitle">LATEST ARTICLES</p>
-                <h2>The Auto-Fit Archive</h2>
-            </header>
-
-            <div class="card-container">
-
-                <article class="card">
-                    <div class="card-image engineering">
-                        <span class="category">Engineering</span>
-                    </div>
-
-                    <div class="card-content">
-                        <h2>
-                            Designing Resilient Grid Systems
-                            for the Modern Web
-                        </h2>
-
-                        <p>
-                            How auto-fit and minmax remove
-                            the need for breakpoint-driven
-                            column math.
-                        </p>
-
-                        <div class="author">
-                            Maya Chen • 6 min read
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-image design">
-                        <span class="category">Design</span>
-                    </div>
-
-                    <div class="card-content">
-                        <h2>
-                            Typography Scales That Don't
-                            Break on Mobile
-                        </h2>
-
-                        <p>
-                            A practical look at clamp(),
-                            fluid type, and readable line lengths.
-                        </p>
-
-                        <div class="author">
-                            Sam Osei • 4 min read
-                        </div>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-image product">
-                        <span class="category">Product</span>
-                    </div>
-
-                    <div class="card-content">
-                        <h2>
-                            Shipping Faster With
-                            Component-Driven Layouts
-                        </h2>
-
-                        <p>
-                            Lessons from rebuilding a design
-                            system around composable grid primitives.
-                        </p>
-
-                        <div class="author">
-                            Priya Nair • 8 min read
-                        </div>
-                    </div>
-                </article>
-
+                <p id="greetingMessage" aria-live="polite"></p>
             </div>
         </section>
 
-        <section id="javascript">
+        <!-- SECTION 2: FEATURES (CSS Grid) -->
+        <section id="features" class="features">
+            <div class="container">
+                <header class="section-header">
+                    <p class="subtitle">LATEST ARTICLES</p>
+                    <h2>The Auto-Fit Archive</h2>
+                </header>
 
-            <h2>JavaScript ES6+ Practice</h2>
+                <div class="features-grid">
 
-            <h3>JavaScript ES6+ Basics</h3>
+                    <article class="card">
+                        <div class="card-image engineering">
+                            <span class="category">Engineering</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Designing Resilient Grid Systems</h3>
+                            <p>How auto-fit and minmax remove the need for breakpoint-driven column math.</p>
+                            <div class="author">Maya Chen • 6 min read</div>
+                        </div>
+                    </article>
 
-            <p>
-                Learning JavaScript fundamentals and
-                modern ES6+ features.
-            </p>
+                    <article class="card">
+                        <div class="card-image design">
+                            <span class="category">Design</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Typography Scales That Don't Break on Mobile</h3>
+                            <p>A practical look at clamp(), fluid type, and readable line lengths.</p>
+                            <div class="author">Sam Osei • 4 min read</div>
+                        </div>
+                    </article>
 
-            <button id="greetingButton" class="greeting-button">
-                Click Me
-            </button>
+                    <article class="card">
+                        <div class="card-image product">
+                            <span class="category">Product</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Shipping Faster With Component-Driven Layouts</h3>
+                            <p>Lessons from rebuilding a design system around composable grid primitives.</p>
+                            <div class="author">Priya Nair • 8 min read</div>
+                        </div>
+                    </article>
 
-            <p id="greetingMessage" aria-live="polite"></p>
+                    <article class="card">
+                        <div class="card-image engineering">
+                            <span class="category">Mobile-First</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mobile-First Approach</h3>
+                            <p>Start with the smallest screen and enhance upward using min-width queries.</p>
+                            <div class="author">Cynaris Team • 3 min read</div>
+                        </div>
+                    </article>
 
+                    <article class="card">
+                        <div class="card-image design">
+                            <span class="category">Flexbox</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Flexible Navigation</h3>
+                            <p>Flexbox lines up navigation items and adapts them from column to row.</p>
+                            <div class="author">Cynaris Team • 3 min read</div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image product">
+                            <span class="category">Media Queries</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Breakpoints That Matter</h3>
+                            <p>320px, 768px, 1024px and 1440px cover phones, tablets, laptops and desktops.</p>
+                            <div class="author">Cynaris Team • 4 min read</div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>
-                We create modern, accessible and
-                responsive web layouts.
-            </p>
-        </section>
+        <!-- SECTION 3: TESTIMONIALS -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <header class="section-header">
+                    <p class="subtitle">WHAT PEOPLE SAY</p>
+                    <h2>Testimonials</h2>
+                </header>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: cynaris@gmail.com</p>
+                <div class="testimonial-list">
+                    <blockquote class="testimonial">
+                        <p>"The layout looks perfect on my phone and my laptop."</p>
+                        <footer>— Ananya R.</footer>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"Clean, fast and easy to navigate. Great responsive work."</p>
+                        <footer>— Karthik S.</footer>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"The mobile-first approach makes everything feel natural."</p>
+                        <footer>— Divya M.</footer>
+                    </blockquote>
+                </div>
+            </div>
         </section>
 
     </main>
-    
-    <footer>
-        <p>&copy; 2026 My HTML5 Website</p>
+
+    <!-- SECTION 4: FOOTER -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Email: cynaris@gmail.com</p>
+            </div>
+            <div>
+                <h2>Our Services</h2>
+                <p>Modern, accessible and responsive web layouts.</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 My HTML5 Website</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
-        
-</html>
 
+</html>
