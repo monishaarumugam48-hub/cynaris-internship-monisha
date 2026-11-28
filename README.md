@@ -1,4 +1,5 @@
 # Cynaris Internship - Monisha
+
 ## About
 This repository contains my internship tasks and daily activities.
 
@@ -14,6 +15,11 @@ This repository contains my internship tasks and daily activities.
 - HTML structure
 - CSS styling
 - JavaScript functionality
+- Responsive design and Media queries
+- Git workflow
+
+## Author
+Monisha
 - Responsive Design and Media Queries
 - Git and GitHub workflow
 
